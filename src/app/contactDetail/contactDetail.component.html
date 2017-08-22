@@ -1,0 +1,36 @@
+<div class="header">
+    <div class="top clearfix">
+        <div class="left" [routerLink]="['/contacts']">
+            <img src="../../assets/back.png" alt="back"> &nbsp;所有联系人
+        </div>
+        <div class="right" [routerLink]="['/editContact/'+ contactInfo.id]">编辑</div>
+    </div>
+    <div class="middle">
+        <img src="../../assets/kobe.jpg" alt="">
+    </div>
+    <div class="bottom">
+        <span class="collect_btn" [class.collected]="contactInfo.isCollected" (click)="collectContact()">
+        </span>
+        <span>{{contactInfo.name}}</span>
+    </div>
+</div>
+<div class="content">
+    <ul>
+        <li>
+            <span>手机号码</span><br>
+            <span class="content_info">{{contactInfo.phone}}</span>
+        </li>
+        <li>
+            <span>邮箱</span><br>
+            <span class="content_info">{{contactInfo.email}}</span>
+        </li>
+        <li>
+            <span>住址</span><br>
+            <span class="content_info">{{contactInfo.address}}</span>
+        </li>
+        <li>
+            <span>自我介绍</span><br>
+            <span class="content_info self_introduction">{{contactInfo.selfIntroduction}}</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,56 @@
+form li {}
+
+form li label {
+    display: inline-block;
+    width: 70px;
+    font-size: 14px;
+}
+
+form li label {
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+form li input[type="text"],
+form li textarea {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+form li textarea {
+    border-color: #ccc;
+}
+
+form li input[type="text"] {
+    border: 1px solid transparent;
+    border-bottom-color: #ccc;
+}
+
+form li input[type="radio"]:nth-of-type(1) {
+    margin: 10px 0 10px 20px;
+}
+
+form li input[type="radio"]:nth-of-type(2) {
+    margin-left: 20px;
+}
+
+.btn_box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 0 20px;
+    background-color: #ffcd02;
+    color: #fff;
+    font-size: 14px;
+}
+
+.ng-invalid.ng-touched:not(form) {
+    border-left: 1px solid #f00 !important;
+}

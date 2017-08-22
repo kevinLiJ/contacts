@@ -1,0 +1,38 @@
+<head-info>
+    <span class="header-content">{{headInfo}}</span>
+</head-info>
+<div class="main_content">
+    <form action="">
+        <ul>
+            <li>
+                <label for="">姓名</label>
+                <input type="text" name="name" [(ngModel)]="contactInfo.name" required>
+            </li>
+            <li>
+                <label for="">性别</label>
+                <input type="radio" name="sex" [(ngModel)]="contactInfo.sex" value="male"> 男 <br>
+                <input type="radio" name="sex" [(ngModel)]="contactInfo.sex" value="female"> 女
+            </li>
+            <li>
+                <label for="">电话</label>
+                <input type="text" name="phone" [(ngModel)]="contactInfo.phone" required>
+            </li>
+            <li>
+                <label for="">邮箱</label>
+                <input type="text" name="email" [(ngModel)]="contactInfo.email" required>
+            </li>
+            <li>
+                <label for="">住址</label>
+                <input type="text" name="address" [(ngModel)]="contactInfo.address" required>
+            </li>
+            <li>
+                <label for="">自我介绍</label>
+                <textarea id="" cols="30" rows="5" name="selfIntroduction" [(ngModel)]="contactInfo.selfIntroduction" required></textarea>
+            </li>
+        </ul>
+        <div class="btn_box">
+            <span class="btn" (click)="updateContact()">{{submitInfo}}</span>
+            <span class="btn" [routerLink]="[cancelUrl]">取消</span>
+        </div>
+    </form>
+</div>
