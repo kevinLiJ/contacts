@@ -2,8 +2,12 @@ import { Injectable } from '@angular/core';
 import { Http, RequestOptions, Jsonp } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 
-const CONTACTS_URL = 'http://127.0.0.1:4001/contacts';
-const COLLECTION_URL = 'http://127.0.0.1:4001/collections';
+
+import { environment as ENV } from '../../../environments/environment';
+
+const CONTACTS_URL = ENV.service + '/contacts';
+const COLLECTION_URL = ENV.service + '/collections';
+console.log(CONTACTS_URL)
 
 @Injectable()
 export class ContactService {

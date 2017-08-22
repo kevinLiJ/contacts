@@ -17,7 +17,6 @@ import { ContactDetailComponent } from './contactDetail/contactDetail.component'
 import { addContactComponent } from './addContact/addContact.component';
 import { ContactService } from './shared/service/contact.service';
 
-
 let rootRouterModule:ModuleWithProviders = RouterModule.forRoot(rootRouterConfig, {useHash : true});
 
 @NgModule({
