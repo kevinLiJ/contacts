@@ -15,9 +15,11 @@ service/querySql 中设置连接mysql的 user和password
 `npm run build`
 localhost:4001
 
+## angular-cli
+
 > proxy.config.json 用于解决开发环境时，前台请求跨域的问题，
 
-(angular-cli.json 配置参数解释)[http://www.cnblogs.com/qingming/p/6961548.html]
+[angular-cli.json 配置参数解释](http://www.cnblogs.com/qingming/p/6961548.html)
 
 
 
