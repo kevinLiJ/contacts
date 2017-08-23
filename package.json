@@ -6,7 +6,7 @@
         "ng": "ng",
         "frontendServe": "ng serve &",
         "service": "node ./bin/www &",
-        "start": "ng serve --proxy-config proxy.conf.json | node ./bin/www",
+        "start": "ng serve --open --proxy-config proxy.conf.json | node ./bin/www",
         "build": "ng build --prod --env=prod && node ./bin/www",
         "test": "ng test | node ./bin/www",
         "lint": "ng lint | node ./bin/www",
