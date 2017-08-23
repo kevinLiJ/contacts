@@ -11,10 +11,6 @@ var collections = require('./routes/collections');
 
 var app = express();
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
     console.log('---------------------------Request Type:', req.method);
     console.log('---------------------------Request URL:', req.originalUrl);
     next();
@@ -32,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
+// app.use('/', index);
 app.use('/contacts', contacts);
 app.use('/collections', collections);
 

@@ -4,7 +4,7 @@ angular2+express+mysql
 
 ## mysql
 service/querySql 中设置连接mysql的 user和password
-并附上mysql文件
+项目根目录附上了contacts.sql文件
 
 ## 开发环境
 `npm run start`
@@ -14,6 +14,8 @@ service/querySql 中设置连接mysql的 user和password
 ## 生产环境
 `npm run build`
 localhost:4001
+
+> proxy.config.json 用于解决开发环境时，前台请求跨域的问题，(angular-cli.json 配置参数解释)[http://www.cnblogs.com/qingming/p/6961548.html]
 
 
 

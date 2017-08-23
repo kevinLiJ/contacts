@@ -6,8 +6,8 @@
         "ng": "ng",
         "frontendServe": "ng serve &",
         "service": "node ./bin/www &",
-        "start": "ng serve | node ./bin/www",
-        "build": "ng build --env=prod && node ./bin/www",
+        "start": "ng serve --proxy-config proxy.conf.json | node ./bin/www",
+        "build": "ng build --prod --env=prod && node ./bin/www",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
