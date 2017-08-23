@@ -8,9 +8,9 @@
         "service": "node ./bin/www &",
         "start": "ng serve --proxy-config proxy.conf.json | node ./bin/www",
         "build": "ng build --prod --env=prod && node ./bin/www",
-        "test": "ng test",
-        "lint": "ng lint",
-        "e2e": "ng e2e"
+        "test": "ng test | node ./bin/www",
+        "lint": "ng lint | node ./bin/www",
+        "e2e": "ng e2e | node ./bin/www"
     },
     "dependencies": {
         "body-parser": "~1.17.1",
