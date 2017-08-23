@@ -19,6 +19,8 @@ localhost:4001
 
 > proxy.config.json 用于解决开发环境时，前台请求跨域的问题，
 
+[angular-cli.json 配置参数解释](http://www.cnblogs.com/qingming/p/6961548.html)
+
 
 
 
