@@ -1,6 +1,19 @@
 
 # contacts
-angular2+express 的集成项目， 有开发和测试环境
+angular2+express+mysql
+
+## mysql
+service/querySql 中设置连接mysql的 user和password
+并附上mysql文件
+
+## 开发环境
+`npm run start`
+前台项目: localhost:4200
+后台服务地址: localhost:4001
+
+## 生产环境
+`npm run build`
+localhost:4001
 
 
 
