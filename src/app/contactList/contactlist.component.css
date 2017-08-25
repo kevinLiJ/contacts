@@ -1,0 +1,7 @@
+.searchBox input {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 5px;
+    background-color: #F9F4F4;
+    border: 1px solid #ccc;
+}
